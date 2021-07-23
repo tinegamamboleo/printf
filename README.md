@@ -1,1 +1,1 @@
-This repository contains first group project on printf.
+This repository contains first group project on printf in alx- holberton school.
