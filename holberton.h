@@ -57,4 +57,9 @@ char *fill_oct_array(char *bnr, char *oct);
 char *fill_long_oct_array(char *bnr, char *oct);
 char *fill_short_oct_array(char *bnr, char *oct);
 char *fill_hex_array(char *bnr, char *hex, int isupp, int limit);
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 0bd2d21953699fa93b26b3697ff108b2218e08ba
 #endif
