@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stddef.h>
 
 /**
  * _printf - Receives the main string and all the necessary parameters to
@@ -9,19 +10,20 @@
 int _printf(const char *format, ...)
 {
 int printed_chars;
+
 conver_t f_list[] = {
-{"c", print_char},
-{"s", print_string},
-{"%", print_percent},
-{"d", print_integer},
-{"i", print_integer},
-{"b", print_binary},
-{"r", print_reversed},
+{"c", print_c},
+{"s", print_s},
+{"%", print_p},
+{"d", print_d},
+{"i", print_i},
+{"b", print_b},
+{"r", print_r},
 {"R", rot13},
 {"u", unsigned_integer},
-{"o", print_octal},
-{"x", print_hex},
-{"X", print_heX},
+{"o", print_o},
+{"x", print_x},
+{"X", print_X},
 {NULL, NULL}
 };
 va_list arg_list;
@@ -34,3 +36,4 @@ printed_chars = parser(format, f_list, arg_list);
 va_end(arg_list);
 return (printed_chars);
 }
+
