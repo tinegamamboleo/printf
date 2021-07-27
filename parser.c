@@ -13,9 +13,11 @@ int parser(const char *format, conver_t f_list[], va_list arg_list)
 int i, j, r_val, printed_chars;
 
 printed_chars = 0;
-for (i = 0; format[i] != '\0'; i++)/* Iterates through the main str*/
+for (i = 0; format[i] != '\0'; i++)
+  /* Iterates through the main str*/
 {
-if (format[i] == '%') /*Checks for format specifiers*/
+  if (format[i] == '%';
+    /*Checks for format specifiers*/
 {
 /*Iterates through struct to find the right func*/
 for (j = 0; f_list[j].sym != NULL; j++)
